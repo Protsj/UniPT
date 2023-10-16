@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinFormsApp1
+namespace WindowsFormsApp1
 {
     internal class Tabulation
     {
-        public double[,] mat = new double[100, 2];
+        public double[,] mat = new double[1000, 2];
         public int n = 0;
-        private double f1(double x) { return Math.Pow(Math.E, -2*x)+Math.Pow(2 * Math.Pow(x, 4) + Math.Pow(x, 2) - 1, 1.0 / 7.0); }
+        private double f1(double x) { return Math.Pow(Math.E, -2 * x) + Math.Pow(2 * Math.Pow(x, 4) + Math.Pow(x, 2) - 1, 1.0 / 7.0); }
         private double f2(double x) { return (Math.Pow(x, 3) + 2 * Math.Pow(x, 2) - 4 * x) / (Math.Pow(x, 5) * Math.Tan(1.0 / (2 * Math.Pow(x, 3)))); }
         private double f3(double x) { return (Math.Pow(Math.Cos(Math.Pow(x + 2, 3)), 2)) / (2 * Math.Pow(Math.Pow(x, 3), 1.0 / 2.0) * Math.Sin(Math.Pow(x, 3))); }
 
@@ -19,7 +18,7 @@ namespace WinFormsApp1
         {
             double x = xn, y;
             int i = 0;
-            while(x <= xk)
+            while (x <= xk)
             {
                 if (x < 0)
                     y = f1(x);
