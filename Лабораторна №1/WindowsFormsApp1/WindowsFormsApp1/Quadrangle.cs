@@ -45,6 +45,6 @@ namespace WindowsFormsApp1
 
         public int S4 { get { return s4; } }
 
-        public bool IsParallelogram() { return (s1 == s3 && s2 == s4) || (s1 == s2 && s3 == s4); }
+        public bool IsParallelogram() { return (s1 == s3 && s2 == s4); }
     }
 }

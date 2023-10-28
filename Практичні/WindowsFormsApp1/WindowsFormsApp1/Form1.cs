@@ -34,5 +34,19 @@ namespace WindowsFormsApp1
                 chart1.Series[0].Points.AddXY(tab.mat[i, 0], tab.mat[i, 1]);
             }
         }
+
+        private void одновимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void двовимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
+        }
     }
 }
