@@ -48,5 +48,19 @@ namespace WindowsFormsApp1
             form3.Show();
             this.Hide();
         }
+
+        private void unitTestToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Hide();
+        }
+
+        private void інтервалToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
+            this.Hide();
+        }
     }
 }
