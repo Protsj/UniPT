@@ -23,17 +23,22 @@ namespace WindowsFormsApp1
 
         public EvenNumSumInInterval(int i1, int i2)
         {
-            int size = i2 - i1 + 1;
-            nums = new int[size];
-            for (int i = 0; i < size; i++)
-                nums[i] = i1 + i;
+            if (i1 > i2)
+                throw new AverageOutOfRangeException("i1 не може бути більшим за i2!");
+            else
+            {
+                int size = i2 - i1 + 1;
+                nums = new int[size];
+                for (int i = 0; i < size; i++)
+                    nums[i] = i1 + i;
+            }
         }
 
         public int GetSumOfEvenNums()
         {
             int sum = 0;
-            for (int i = 0; i < nums.Length; i++)
-                if (nums[i] % 2 == 0)
+            for(int i = 0; i < nums.Length; i++)
+                if(nums[i] % 2 == 0)
                     sum += nums[i];
             return sum;
         }

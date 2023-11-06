@@ -29,12 +29,24 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int i1, i2;
-            i1 = Convert.ToInt32(textBox1.Text);
-            i2 = Convert.ToInt32(textBox2.Text);
-            EvenNumSumInInterval ensii = new EvenNumSumInInterval(i1, i2);
-            int res = ensii.GetSumOfEvenNums();
-            label3.Text = $"Сума парних чисел: {res.ToString()}";
+            try
+            {
+                int i1, i2;
+                i1 = Convert.ToInt32(textBox1.Text);
+                i2 = Convert.ToInt32(textBox2.Text);
+                if (i1 > i2)
+                    MessageBox.Show("i1 не може бути більшим за i2!");
+                else
+                {
+                    EvenNumSumInInterval ensii = new EvenNumSumInInterval(i1, i2);
+                    int res = ensii.GetSumOfEvenNums();
+                    label3.Text = $"Сума парних чисел: {res.ToString()}";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
