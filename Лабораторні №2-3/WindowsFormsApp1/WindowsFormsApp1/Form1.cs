@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.l2;
 
 namespace WindowsFormsApp1
 {
@@ -20,27 +21,6 @@ namespace WindowsFormsApp1
             textBox3.Hide();
             textBox4.Hide();
         }
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                label4.Show();
-                label8.Show();
-                label8.Text = "Спеціальність:";
-                textBox3.Show();
-                textBox4.Show();
-                textBox3.Clear();
-                textBox4.Text = "0";
-            }
-            else
-            {
-                label4.Hide();
-                label8.Hide();
-                textBox3.Hide();
-                textBox4.Hide();
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -78,6 +58,27 @@ namespace WindowsFormsApp1
             catch
             {
                 MessageBox.Show("Будь ласка, заповніть всі обов'язкові поля (Ім'я, середній бал...)");
+            }
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                label4.Show();
+                label8.Show();
+                label8.Text = "Спеціальність:";
+                textBox3.Show();
+                textBox4.Show();
+                textBox3.Clear();
+                textBox4.Text = "0";
+            }
+            else
+            {
+                label4.Hide();
+                label8.Hide();
+                textBox3.Hide();
+                textBox4.Hide();
             }
         }
     }

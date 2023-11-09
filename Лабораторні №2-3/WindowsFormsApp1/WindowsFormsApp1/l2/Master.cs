@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.l2
 {
     internal class Master : Student
     {
@@ -28,7 +28,6 @@ namespace WindowsFormsApp1
             this.specialty = specialty;
             this.m = m;
         }
-
         public override float scholarship() { return base.scholarship() + m; }
     }
 }
