@@ -68,21 +68,27 @@ namespace WindowsFormsApp2
                 SolidBrush sb2 = new SolidBrush(Color.Red);
                 SolidBrush sb3 = new SolidBrush(Color.Green);
 
-                if (comboBox1.SelectedIndex == 1)
+                if (comboBox1.SelectedIndex == 0)
+                    sb1 = new SolidBrush(Color.Green);
+                else if (comboBox1.SelectedIndex == 1)
                     sb1 = new SolidBrush(Color.Blue);
                 else if (comboBox1.SelectedIndex == 2)
                     sb1 = new SolidBrush(Color.Red);
                 else if (comboBox1.SelectedIndex == 3)
                     sb1 = new SolidBrush(Color.Yellow);
 
-                if (comboBox2.SelectedIndex == 1)
+                if (comboBox1.SelectedIndex == 0)
+                    sb2 = new SolidBrush(Color.Green);
+                else if(comboBox2.SelectedIndex == 1)
                     sb2 = new SolidBrush(Color.Blue);
                 else if (comboBox2.SelectedIndex == 2)
                     sb2 = new SolidBrush(Color.Red);
                 else if (comboBox2.SelectedIndex == 3)
                     sb2 = new SolidBrush(Color.Yellow);
 
-                if (comboBox3.SelectedIndex == 1)
+                if (comboBox1.SelectedIndex == 0)
+                    sb3 = new SolidBrush(Color.Green);
+                else if(comboBox3.SelectedIndex == 1)
                     sb3 = new SolidBrush(Color.Blue);
                 else if (comboBox3.SelectedIndex == 2)
                     sb3 = new SolidBrush(Color.Red);
