@@ -77,7 +77,7 @@ namespace WindowsFormsApp2
                 else if (comboBox1.SelectedIndex == 3)
                     sb1 = new SolidBrush(Color.Yellow);
 
-                if (comboBox1.SelectedIndex == 0)
+                if (comboBox2.SelectedIndex == 0)
                     sb2 = new SolidBrush(Color.Green);
                 else if(comboBox2.SelectedIndex == 1)
                     sb2 = new SolidBrush(Color.Blue);
@@ -86,7 +86,7 @@ namespace WindowsFormsApp2
                 else if (comboBox2.SelectedIndex == 3)
                     sb2 = new SolidBrush(Color.Yellow);
 
-                if (comboBox1.SelectedIndex == 0)
+                if (comboBox3.SelectedIndex == 0)
                     sb3 = new SolidBrush(Color.Green);
                 else if(comboBox3.SelectedIndex == 1)
                     sb3 = new SolidBrush(Color.Blue);
