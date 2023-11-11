@@ -8,6 +8,24 @@ namespace UnitTestProject1
     public class ParallelogramTest
     {
         [TestMethod]
+        public void CreateParallelogramTest() 
+        {
+            Point[] points = { new Point(10, 10), new Point(5, 5), new Point(20, 10), new Point(15, 5) };
+            var p = new Parallelogram(points); 
+        }
+        [TestMethod]
+        public void GetParallelogramPointsTest()
+        {
+            Point[] points = { new Point(10, 10), new Point(5, 5), new Point(20, 10), new Point(15, 5) };
+            var p = new Parallelogram(points);
+            Point[] trueRes = p.Points;
+            for (int i = 0; i < points.Length; i++)
+            {
+                Assert.AreEqual(points[i].X, trueRes[i].X);
+                Assert.AreEqual(points[i].Y, trueRes[i].Y);
+            }
+        }
+        [TestMethod]
         public void moveTest()
         {
             Point[] points = { new Point(10, 10), new Point(5, 5), new Point(20, 10), new Point(15, 5) };

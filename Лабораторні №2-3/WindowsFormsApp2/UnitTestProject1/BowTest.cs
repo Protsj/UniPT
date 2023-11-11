@@ -8,6 +8,24 @@ namespace UnitTestProject1
     public class BowTest
     {
         [TestMethod]
+        public void CreateBowTest()
+        {
+            Point[] points = { new Point(5, 5), new Point(5, 15), new Point(10, 10), new Point(15, 5), new Point(15, 10) };
+            var p = new Bow(points);
+        }
+        [TestMethod]
+        public void GetBowPointsTest()
+        {
+            Point[] points = { new Point(5, 5), new Point(5, 15), new Point(10, 10), new Point(15, 5), new Point(15, 10) };
+            var p = new Bow(points);
+            Point[] trueRes = p.Points;
+            for (int i = 0; i < points.Length; i++)
+            {
+                Assert.AreEqual(points[i].X, trueRes[i].X);
+                Assert.AreEqual(points[i].Y, trueRes[i].Y);
+            }
+        }
+        [TestMethod]
         public void moveTest()
         {
             Point[] points = { new Point(5, 5), new Point(5, 15), new Point(10, 10), new Point(15, 5), new Point(15, 10) };

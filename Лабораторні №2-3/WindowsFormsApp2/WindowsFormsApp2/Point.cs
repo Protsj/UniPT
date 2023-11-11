@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,16 @@ namespace WindowsFormsApp2
             X = x;
             Y = y;
         }
-        public virtual void Move(int num) {}
-        public virtual void Scale(int scale) {}
+        public virtual void Move(float x, float y) 
+        {
+            X += x;
+            Y += y;
+        }
+        public virtual void Scale(int scale) 
+        {
+            X *= scale;
+            Y *= scale;
+        }
         public virtual void Rotate(int angle) {}
     }
 }
