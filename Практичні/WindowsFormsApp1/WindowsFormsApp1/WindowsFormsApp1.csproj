@@ -66,6 +66,12 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
     <Compile Include="p3\EvenNumSumInInterval.cs" />
     <Compile Include="p3\ThreeNumCalc.cs" />
     <Compile Include="p4\FileRead.cs" />
@@ -74,6 +80,11 @@
     <Compile Include="p4\IWrite.cs" />
     <Compile Include="p4\PointInCircle.cs" />
     <Compile Include="p4\ShowArray.cs" />
+    <Compile Include="p5\IComparable.cs" />
+    <Compile Include="p5\IComparer.cs" />
+    <Compile Include="p5\SortByCourse.cs" />
+    <Compile Include="p5\Student.cs" />
+    <Compile Include="p5\Students.cs" />
     <Compile Include="TemperatureArrays.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -114,6 +125,9 @@
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -125,6 +139,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="p4\ClassDiagram1.cd" />
+    <None Include="p5\ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
