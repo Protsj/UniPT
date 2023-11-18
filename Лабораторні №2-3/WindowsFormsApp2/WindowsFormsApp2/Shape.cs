@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
 
         public Shape(int n) { Points = new Point[n]; }
 
-        public void Move(int x, int y) 
+        public void Move(int x, int y)
         {
             foreach (var p in Points)
             {

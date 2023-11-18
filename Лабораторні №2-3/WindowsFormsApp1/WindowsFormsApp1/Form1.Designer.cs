@@ -45,6 +45,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.abstractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.абстракціяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.componentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.компонентToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,7 +175,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abstractToolStripMenuItem});
+            this.abstractToolStripMenuItem,
+            this.componentToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -191,9 +194,24 @@
             // абстракціяToolStripMenuItem
             // 
             this.абстракціяToolStripMenuItem.Name = "абстракціяToolStripMenuItem";
-            this.абстракціяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.абстракціяToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.абстракціяToolStripMenuItem.Text = "Абстракція";
             this.абстракціяToolStripMenuItem.Click += new System.EventHandler(this.абстракціяToolStripMenuItem_Click);
+            // 
+            // componentToolStripMenuItem
+            // 
+            this.componentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.компонентToolStripMenuItem});
+            this.componentToolStripMenuItem.Name = "componentToolStripMenuItem";
+            this.componentToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.componentToolStripMenuItem.Text = "Component";
+            // 
+            // компонентToolStripMenuItem
+            // 
+            this.компонентToolStripMenuItem.Name = "компонентToolStripMenuItem";
+            this.компонентToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.компонентToolStripMenuItem.Text = "Компонент";
+            this.компонентToolStripMenuItem.Click += new System.EventHandler(this.компонентToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -244,6 +262,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem abstractToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem абстракціяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem componentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem компонентToolStripMenuItem;
     }
 }
 
