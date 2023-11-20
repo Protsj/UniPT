@@ -68,13 +68,19 @@ namespace WindowsFormsApp3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            foreach (var item in cart.Commodities) 
-                cart.buy += new MyEventHandler(item.ComBuyEvent);
-            cart.buyCom();
-            MessageBox.Show("Товари були куплені.");
-            dataGridView2.Rows.Clear();
-            cart.Commodities.Clear();
-            label2.Text = $"Корзина (товарів: {cart.Commodities.Count})";
+            try
+            {
+                if (cart.Commodities.Count == 0)
+                    throw new Exception("Товарів в корзині немає!");
+                foreach (var item in cart.Commodities)
+                    cart.buy += new MyEventHandler(item.ComBuyEvent);
+                cart.buyCom();
+                MessageBox.Show("Товари були куплені.");
+                dataGridView2.Rows.Clear();
+                cart.Commodities.Clear();
+                label2.Text = $"Корзина (товарів: {cart.Commodities.Count})";
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }
