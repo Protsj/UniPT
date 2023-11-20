@@ -76,5 +76,12 @@ namespace WindowsFormsApp1
             form7.Show();
             this.Hide();
         }
+
+        private void eventHandlerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form8 form8 = new Form8();
+            form8.Show();
+            this.Hide();
+        }
     }
 }

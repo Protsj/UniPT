@@ -54,9 +54,11 @@
             this.інтервалToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sOLIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.точкиВКоліToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.інрерфейсиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.стандартніІнтерфейсиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventHandlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -192,7 +194,8 @@
             this.роботаЗМасивамиToolStripMenuItem,
             this.unitTestToolStripMenuItem,
             this.sOLIDToolStripMenuItem,
-            this.інрерфейсиToolStripMenuItem});
+            this.інрерфейсиToolStripMenuItem,
+            this.eventsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(969, 24);
@@ -256,18 +259,9 @@
             // точкиВКоліToolStripMenuItem
             // 
             this.точкиВКоліToolStripMenuItem.Name = "точкиВКоліToolStripMenuItem";
-            this.точкиВКоліToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.точкиВКоліToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.точкиВКоліToolStripMenuItem.Text = "Точки в колі";
             this.точкиВКоліToolStripMenuItem.Click += new System.EventHandler(this.точкиВКоліToolStripMenuItem_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(467, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(490, 61);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // інрерфейсиToolStripMenuItem
             // 
@@ -283,6 +277,30 @@
             this.стандартніІнтерфейсиToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.стандартніІнтерфейсиToolStripMenuItem.Text = "Стандартні інтерфейси";
             this.стандартніІнтерфейсиToolStripMenuItem.Click += new System.EventHandler(this.стандартніІнтерфейсиToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(467, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(490, 61);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // eventsToolStripMenuItem
+            // 
+            this.eventsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eventHandlerToolStripMenuItem});
+            this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.eventsToolStripMenuItem.Text = "Events";
+            // 
+            // eventHandlerToolStripMenuItem
+            // 
+            this.eventHandlerToolStripMenuItem.Name = "eventHandlerToolStripMenuItem";
+            this.eventHandlerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eventHandlerToolStripMenuItem.Text = "EventHandler";
+            this.eventHandlerToolStripMenuItem.Click += new System.EventHandler(this.eventHandlerToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -344,6 +362,8 @@
         private System.Windows.Forms.ToolStripMenuItem точкиВКоліToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem інрерфейсиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem стандартніІнтерфейсиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventHandlerToolStripMenuItem;
     }
 }
 

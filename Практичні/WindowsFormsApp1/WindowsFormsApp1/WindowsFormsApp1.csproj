@@ -72,6 +72,12 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
     <Compile Include="p3\EvenNumSumInInterval.cs" />
     <Compile Include="p3\ThreeNumCalc.cs" />
     <Compile Include="p4\FileRead.cs" />
@@ -85,6 +91,13 @@
     <Compile Include="p5\SortByCourse.cs" />
     <Compile Include="p5\Student.cs" />
     <Compile Include="p5\Students.cs" />
+    <Compile Include="p6\Cart.cs" />
+    <Compile Include="p6\Commodity.cs" />
+    <Compile Include="p6\IAddToCart.cs" />
+    <Compile Include="p6\IInfo.cs" />
+    <Compile Include="p6\MilkProduct.cs" />
+    <Compile Include="p6\Product.cs" />
+    <Compile Include="p6\Toy.cs" />
     <Compile Include="TemperatureArrays.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -127,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
